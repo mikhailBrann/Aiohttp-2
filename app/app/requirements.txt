@@ -1,0 +1,6 @@
+aiohttp[speedups]
+gunicorn
+gino==1.0.1
+asyncpg
+bcrypt
+pydantic

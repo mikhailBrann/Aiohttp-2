@@ -1,0 +1,77 @@
+# примеры API-запросов
+
+@baseUrl = http://0.0.0.0:8080
+
+# получение пользователей
+GET {{baseUrl}}/users/
+Content-Type: application/json
+
+###
+
+
+# создание пользователя
+POST {{baseUrl}}/users/
+Content-Type: application/json
+
+{
+  "username": "valera_345",
+  "password": "краснодарский345",
+  "email": "email@mail1.ru4"
+}
+
+###
+
+
+# авторизация пользователей
+PATCH {{baseUrl}}/users/
+Content-Type: application/json
+
+{
+   "username": "valera_345",
+   "password": "краснодарский345"
+}
+
+###
+
+# получение объявлений
+GET {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+###
+
+# создание объявления
+POST {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "title": "addasv 1",
+    "description": "adv 1 moto", 
+    "owner": 5
+}
+
+###
+
+# изменение объявления
+PATCH {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "id": 10,
+    "title": "new title1",
+    "description": "new description1", 
+    "owner": 5
+}
+
+###
+
+# удалить объявления
+DELETE {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "id": 8,
+    "owner": 1
+}
+
+###
+
